@@ -79,7 +79,7 @@ if [ "$INSTALLED_VERSION" != "1.22.4" ]; then
     fi
 
     # Download and install Go
-    wget https://go.dev/dl/$GO_BINARY > /dev/null 2>&1 || echo "Failed to download Go!"
+    wget https://golang.google.cn/dl/$GO_BINARY > /dev/null 2>&1 || echo "Failed to download Go!"
     sudo tar -xvf $GO_BINARY > /dev/null 2>&1 || echo "Failed to extract Go!"
     sudo rm -rf /usr/local/go || echo "Failed to remove existing Go!"
     sudo mv go /usr/local || echo "Failed to move Go!"
