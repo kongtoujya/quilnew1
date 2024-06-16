@@ -101,7 +101,7 @@ echo "✅ cpulimit and gawk are installed and up to date."
 
 # Installing Go
 echo "⏳ Downloading and installing GO..."
-wget https://studygolang.com/dl/$GO_BINARY > /dev/null 2>&1 || echo "❌ Failed to download GO!"    
+wget https://mirrors.aliyun.com/golang/$GO_BINARY > /dev/null 2>&1 || echo "❌ Failed to download GO!"    
 sudo tar -xvf $GO_BINARY > /dev/null 2>&1 || echo "❌ Failed to extract GO!"
 sudo rm -rf /usr/local/go || echo "❌ Failed to remove existing GO!"
 sudo mv go /usr/local || echo "❌ Failed to move GO!"
