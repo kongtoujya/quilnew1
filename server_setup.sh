@@ -100,13 +100,6 @@ echo "✅ cpulimit and gawk are installed and up to date."
 # Step 4: Download and extract Go
 
 # Installing Go
-echo "⏳ Downloading and installing GO..."
-wget https://mirrors.aliyun.com/golang/$GO_BINARY > /dev/null 2>&1 || echo "❌ Failed to download GO!"    
-sudo tar -xvf $GO_BINARY > /dev/null 2>&1 || echo "❌ Failed to extract GO!"
-sudo rm -rf /usr/local/go || echo "❌ Failed to remove existing GO!"
-sudo mv go /usr/local || echo "❌ Failed to move GO!"
-sudo rm $GO_BINARY || echo "❌ Failed to remove downloaded archive!"
-
 # Step 5: Set Go environment variables
 echo "🌍 Setting Go environment variables..."
 
